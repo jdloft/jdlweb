@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="pure-u-1 pure-u-sm-2-5 center-cell">
-                <a href="http://blog.jdloft.ml" class="button-large" id="blog">Blog <img src="icons/right.svg" height=70 width=70></a>
+                <a href="" class="button-large" id="blog">Blog <img src="icons/right.svg" height=70 width=70></a>
             </div>
         </div>
         <div class="pure-g">
@@ -89,6 +89,9 @@
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by/4.0/80x15.png" /></a> &#8226; <a href="attribution.html">Attribution</a>
             </div>
         </div>
+        <script>
+            document.getElementById('blog').href = "http://blog." + window.location.host;
+        </script>
         <script>
             var subtext = [
                 "breaks computers, sometimes not.",
