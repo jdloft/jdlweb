@@ -12,8 +12,9 @@
         <style type="text/css">
             body {
                 background-image: url("background.png");
+                background-repeat: no-repeat;
                 background-color: black;
-                background-position: center top;
+                background-position: center 10px;
                 -moz-user-select: none;
                 -webkit-user-select: none;
                 -ms-user-select:none;
@@ -38,13 +39,7 @@
                 font-size: 100;
                 margin-bottom: 5px;
                 margin-right: 10px;
-                color: #21a2d1;
-            }
-            #subtext {
-                text-align: right;
-                margin-right: 10px;
-                margin-bottom: 5%;
-                color: #21a2d1;
+                color: #0497C0;
             }
             #footer {
                 font-size: 10;
@@ -52,13 +47,14 @@
                 width: 100%;
                 bottom: 0;
                 text-align: center;
-                color: #21a2d1;
+                color: #0497C0;
             }
             #footer a {
-                color: #21a2d1;
+                color: #0497C0;
             }
-            .center-cell {
+            .button-cell {
                 text-align: center;
+                margin-bottom: 15px;
             }
             #social img {
                 display: inline-block;
@@ -66,7 +62,7 @@
                 padding-right: 10px;
             }
             .button-large {
-                color: #21a2d1;
+                color: #0497C0;
                 white-space: nowrap;
                 font-size: 100px;
             }
@@ -77,18 +73,17 @@
         <div class="pure-g">
             <div class="pure-u-1">
                  <h1 id="name">jdloft</h1>
-                 <h2 id="subtext"></h2>
             </div>
         </div>
-        <div class="pure-g">
+        <div class="pure-g" style="margin-top: 275px;">
+            <div class="pure-u-1 pure-u-sm-1-2 button-cell">
+                <a href="http://blog.jdloft.com" class="button-large" id="blog"><img src="icons/left.svg" height=70 width=70> Blog</a>
+            </div>
             <div class="pure-u-1 pure-u-sm-1-2">
-                <div class="center-cell" id="social">
+                <div class="button-cell" id="social">
                     <a href="http://github.com/jdloft" id="github"><img src="icons/github.svg" height=100 width=100></a>
                     <a href="https://plus.google.com/+JamisonLofthouse" id="googleplus"><img src="icons/googleplus.svg" height=100 width=100></a>
                 </div>
-            </div>
-            <div class="pure-u-1 pure-u-sm-1-2 center-cell">
-                <a href="http://blog.jdloft.com" class="button-large" id="blog">Blog <img src="icons/right.svg" height=70 width=70></a>
             </div>
         </div>
         <div class="pure-g">
@@ -96,20 +91,6 @@
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by/4.0/80x15.png" /></a>
             </div>
         </div>
-        <script>
-            var subtext = [
-                "breaks computers, sometimes not.",
-                "doesn't like Microsoft.",
-                "owned a Windows Phone and (barely) survived.",
-                "prefers HJKL over WASD.",
-                "has a website.",
-                "codes everywhere.",
-                "lives Vim.",
-                "It's a programmer's webpage not a designer's."
-            ];
-            textNum = Math.floor(Math.random() * subtext.length);
-            document.getElementById("subtext").innerHTML = subtext[textNum];
-        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </body>
 </html>
