@@ -36,6 +36,11 @@ a:hover {
 .button-cell {
     margin-bottom: 15px;
 }
+#social img {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .button-large {
     color: #0497C0;
     white-space: nowrap;
